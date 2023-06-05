@@ -2,11 +2,19 @@
 Pequeño CRUD de podcast y usuarios.
 <hr>
 <h3>Usuarios</h3>
-CRUD de usuarios con la funcionalidad de softdelete en lugar de la funcionalidad normal de borrado junto con roles.
-
+<p>
+Usuarios con la funcionalidad de softdelete en lugar de la funcionalidad normal de borrado junto con roles.
+</p>
+[] Create
+[] Read
+[] Update
+[] Delete (sofdelete)
 <hr>
 <h3>Podcast</h3>
-CRUD para generar podcast, junto con fotos y descripcion 
-
+Podcast junto con fotos y descripcion 
+[] Create
+[] Read
+[] Update
+[] Delete (sofdete)
 <hr>
 Creado por Miguel Ángel Blanco González
