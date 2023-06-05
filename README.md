@@ -11,7 +11,7 @@ Usuarios con la funcionalidad de softdelete en lugar de la funcionalidad normal 
 [] Delete (sofdelete) <br>
 <hr>
 <h3>Podcast</h3>
-Podcast junto con fotos y descripcion 
+<p>Podcast junto con fotos y descripcion </p>
 [] Create <br>
 [] Read<br>
 [] Update<br>
