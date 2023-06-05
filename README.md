@@ -21,7 +21,7 @@ Usuarios con la funcionalidad de softdelete en lugar de la funcionalidad normal 
 <p>Debido a que los usuarios por defecto se crean com el rol de usuario aqui te dejo el que se genera automaticamente al lanzar migraciones y la seed del proyecto con el siguiente comando: 
 <b> php artisan migrate:fresh --seed </b> 
 </p>
- email => admin@admin.com,
+ email => admin@admin.com <br>
  password => 123456789
 
 <hr>
