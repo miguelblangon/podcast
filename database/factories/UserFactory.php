@@ -18,7 +18,8 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => 'Admin',
+            'name' => 'Admin nombre ',
+            'last_name'=>'Admin apellido',
             'email' => 'admin@admin.com',
             'email_verified_at' => now(),
             'password' => '$2y$10$/5FfI/QTYgGn9HptYmVI7uGkuyf4vSjBeDyChvl.yggIyiZFMF/ee', // 123456789
