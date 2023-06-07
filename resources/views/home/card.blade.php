@@ -16,7 +16,9 @@
             <div class="tab-pane" id="users" role="tabpanel" aria-labelledby="users-tab" tabindex="0">
                 @include('users.admin.admin_panel')
             </div>
-            <div class="tab-pane" id="podcast" role="tabpanel" aria-labelledby="podcast-tab" tabindex="0">Podcast</div>
+            <div class="tab-pane" id="podcast" role="tabpanel" aria-labelledby="podcast-tab" tabindex="0">
+                @include('users.admin.admin_panel_podcast')
+            </div>
         @endif
     </div>
     </div>

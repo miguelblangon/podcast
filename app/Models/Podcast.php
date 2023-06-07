@@ -26,7 +26,9 @@ protected $fillable = [
 ];
 protected $guarded=['users_id'];
 
-
+public function autor(){
+    return $this->belongsTo(User::class,'users_id','id' );
+}
 
 
 

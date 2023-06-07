@@ -104,11 +104,13 @@ class HomeController extends Controller
 
     }
     public function restore($id) 
-{
-    User::where('id', $id)->withTrashed()->restore();
+    {
+        if (auth()->user()->rol=='user') 
+        return back();
+        
+        User::where('id', $id)->withTrashed()->restore();
 
-    return redirect('home')->with(['status'=>'Activado Satisfactoriamente !','rol'=>'success' ]  );
-
-}
+        return redirect('home')->with(['status'=>'Activado Satisfactoriamente !','rol'=>'success' ]  );
+    }
 
 }

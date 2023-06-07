@@ -26,9 +26,16 @@ $(function() {
 
     //Boton de crear podcast
     $('[name=btnCreatePodcast]').on('click',function(){
-      // console.log("has pulsado un boton");
+      
          $.get('/podcast-create',function(data){$("#modal .modal-body").html(data);});     
     });
+    //boton de actualizar
+    $('[name=btnUpdatePodcast]').on('click',function(){
+      $.get('/podcast-update/'+$(this).val(),function(data){$("#modal .modal-body").html(data);});     
+    });
+
+
+    
 
 
 

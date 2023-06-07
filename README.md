@@ -33,8 +33,8 @@ Podcast junto con fotos y descripción.
 
 - [x] Create <br>
 - [x] Read<br>
-- [ ] Update<br>
-- [ ] Delete (sofdete) <br>
+- [x] Update<br>
+- [x] Delete (sofdete) <br>
 
 <hr>
 Creado por Miguel Ángel Blanco González

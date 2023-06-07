@@ -15,7 +15,27 @@
               <p class="card-text">
                 {{ $podcast->detail }}
               </p>
-              <a href="{{ route('podcast.descargar',['podcast'=>$podcast->id] ) }}" class="btn btn-primary">Descargar</a>
+              <div class="row">
+                <div class="col">
+                  <a href="{{ route('podcast.descargar',['podcast'=>$podcast->id] ) }}" class="btn btn-primary">Descargar</a>
+                </div>
+                <div class="col"> 
+                    <form method="POST" name="deletePodcast" action="{{ route('podcast.delete', ['podcast'=>$podcast->id] )}}">
+                      @csrf 
+                      @method('DELETE')
+                      <div class="form-group">
+                          <input type="submit" class="btn btn-danger" value="B">
+                      </div>
+                    </form>
+                </div>
+                <div class="col">
+                  <button type="button" class="btn btn-warning" name="btnUpdatePodcast" 
+                  data-bs-toggle="modal" data-bs-target="#modal"
+                  value="{{ $podcast->id }}">
+                    E
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

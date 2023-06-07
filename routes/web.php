@@ -35,6 +35,16 @@ Route::group(['middleware' => ['auth']], function () { //Podcast
 Route::get('/podcast-create', [App\Http\Controllers\PodcastController::class, 'create'])->name('podcast.create');
 //funcion guardar
 Route::post('/podcast-create', [App\Http\Controllers\PodcastController::class, 'store'])->name('podcast.store');
+// vista de actualizar
+Route::get('/podcast-update/{podcast}', [App\Http\Controllers\PodcastController::class, 'edit'])->name('podcast.edit');
+// funcion de actualizar
+Route::post('/podcast-update/{podcast}', [App\Http\Controllers\PodcastController::class, 'update'])->name('podcast.update');
 //funcion de descargar el audio
 Route::get('/podcast-descargar/{podcast}', [App\Http\Controllers\PodcastController::class, 'descargar'])->name('podcast.descargar');
+//Funcion de Eliminar y restaurar
+Route::delete('/podcast-delete/{podcast}', [App\Http\Controllers\PodcastController::class, 'delete'])->name('podcast.delete');
+Route::post('/podcast-restore/{podcast}', [App\Http\Controllers\PodcastController::class, 'restore'])->name('podcast.restore');
+
+
+
 });
