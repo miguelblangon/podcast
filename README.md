@@ -2,15 +2,18 @@
 
 Pequeño CRUD de podcast y usuarios.
 
-<hr>
+### Instalación ###
 
+Generar el archivo .env de laravel y lanzar el comando: ` php artisan storage:link `, crear una bd y lanzar el comando ` php artisan migrate:fresh --seed ` para que se generen las tablas y el administrador 
+
+<hr>
 ## Usuarios ##
 
 Usuarios con la funcionalidad de softdelete en lugar de la funcionalidad normal de borrado junto con roles.
 
 
 Debido a que los usuarios por defecto se crean com el rol de usuario el que se genera automaticamente al lanzar migraciones y la seed del proyecto con el siguiente comando: 
-<b> php artisan migrate:fresh --seed </b> 
+ ` php artisan migrate:fresh --seed `
 
 
 Usuario por defecto
