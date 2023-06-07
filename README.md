@@ -31,10 +31,10 @@ Usuario por defecto
 
 Podcast junto con fotos y descripción.
 
-- [] Create <br>
-- [] Read<br>
-- [] Update<br>
-- [] Delete (sofdete) <br>
+- [ ] Create <br>
+- [ ] Read<br>
+- [ ] Update<br>
+- [ ] Delete (sofdete) <br>
 
 <hr>
 Creado por Miguel Ángel Blanco González
