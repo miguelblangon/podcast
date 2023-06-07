@@ -23,7 +23,7 @@ return new class extends Migration
             //relación con el usuario
             $table->unsignedBigInteger('users_id');
             $table->foreign('users_id')->references('id')->on('users');
-
+            $table->softDeletes();
             $table->timestamps();
         });
     }

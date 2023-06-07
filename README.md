@@ -31,8 +31,8 @@ Usuario por defecto
 
 Podcast junto con fotos y descripción.
 
-- [ ] Create <br>
-- [ ] Read<br>
+- [x] Create <br>
+- [x] Read<br>
 - [ ] Update<br>
 - [ ] Delete (sofdete) <br>
 

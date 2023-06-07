@@ -3,18 +3,21 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Http\Controllers\PodcastController;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    private $podcastController;
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct( PodcastController $podcast )
     {
         $this->middleware('auth');
+        $this->podcastController = $podcast;
     }
 
     /**
@@ -25,9 +28,11 @@ class HomeController extends Controller
     public function index()
     {
         if (auth()->user()->rol=='admin') {
-            return view('home')->with('users',User::withTrashed()->get() );
+            return view('home')->with(['users'=> User::withTrashed()->get(), 
+            'podcast_admin'=> $this->podcastController->admin_index(),
+            'podcast_user'=> $this->podcastController->user_index()]);
         }else{
-            return view('home');
+            return view('home')->with([ 'podcast_user'=> $this->podcastController->user_index()]);
         }
         
     }

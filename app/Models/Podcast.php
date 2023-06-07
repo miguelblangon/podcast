@@ -1,24 +1,34 @@
 <?php
-  
+
 namespace App\Models;
-  
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-  
-class Product extends Model
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+
+
+class Podcast extends Model
 {
-    use HasFactory;
+    use HasFactory,SoftDeletes;
+    protected $table ='podcast';
   
-    /**
-     * The attributes that are mass assignable.
-     *  
-     * @var array
-     */
-    protected $fillable = [
-        'name', 
-        'detail',
-        'podcasts_url',
-        'caratula_url'
-    ];
-    protected $guarded=['users_id'];
+/**
+ * The attributes that are mass assignable.
+ *  
+ * @var array
+ */
+protected $fillable = [
+    'name', 
+    'detail',
+    'podcasts_url',
+    'caratula_url'
+];
+protected $guarded=['users_id'];
+
+
+
+
+
+
 }

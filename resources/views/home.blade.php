@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             @if(session('status'))
             <div class="alert alert-{{ session('rol') }}">
                 {{ session('status') }}
@@ -24,16 +24,18 @@
 $(function() {
     console.log( "ready!" );
 
+    //Boton de crear podcast
+    $('[name=btnCreatePodcast]').on('click',function(){
+      // console.log("has pulsado un boton");
+         $.get('/podcast-create',function(data){$("#modal .modal-body").html(data);});     
+    });
+
+
+
+
+    //Boton de actualizar usuario en el panel del admin
     $('[name=btnUpdateAdmin]').on('click',function(){
-        //console.log( "button update  "  );
-       
-        $.get('/user-show/'+$(this).val(),function(data){
-               // $('#modal').modal('show');
-                $("#modal .modal-body").html(data);
-            }); 
-       
-       
-       
+        $.get('/user-show/'+$(this).val(),function(data){$("#modal .modal-body").html(data);});     
     });
 
 });

@@ -5,7 +5,10 @@
     <div class="card-body">
     <!-- Tab panes -->
     <div class="tab-content">
-        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Home</div>
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            @include('podcast.podcast_usuario_index')
+        </div>
+       
         <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             @include('users.user.from_update')
         </div>

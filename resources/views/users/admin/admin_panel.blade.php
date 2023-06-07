@@ -23,7 +23,7 @@
                         @csrf 
                         @method('DELETE')
                         <div class="form-group">
-                            <input type="submit" class="btn btn-danger" value="D">
+                            <input type="submit" class="btn btn-danger" value="B">
                         </div>
                       </form>
                       @else
